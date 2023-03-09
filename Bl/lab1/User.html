@@ -11,7 +11,7 @@
         .btn {
             margin: auto;
             display: block;
-            width: 200px;
+            width: 100px;
         }
 
         .modal-title {
@@ -72,7 +72,7 @@
         }
 
         .text-center {
-            margin-top: 100px;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -119,21 +119,29 @@
 
     <h3 class="h3">user</h3>
 
-    <nav class="navbar navbar-light bg-light  ">
-        <form class=" form-inline ">
-           <input class="form-control col-4 col-sm-4 col-md-4" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success col-3 col-sm-2 col-md-2" type="submit">Search</button>
+    <nav class="navbar navbar-light bg-light  col-12 col-sm-12 col-md-12">
+        <form class=" form-inline col-12 col-sm-12 col-md-12">
+
+            <div class=" col-6 col-sm-5 col-md-5">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            </div>
+            <div class="col-3 col-sm-3 col-md-1">
+                <button class="btn btn-outline-success " type="submit">Search</button>
+            </div>
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Add User
-        </button>
+            <div class="col-3 col-sm-3 col-md-1" style="margin-left: auto;">
+                <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Add User
+                </button>
+            </div>
         </form>
-        
+
     </nav>
     <h5 class="h5">Thông tin người dùng</h5>
-    <table class="table">
-        <thead>
-            <tr>
+
+    <table class="table table-bordered col">
+        <thead  style="width: auto;">
+            <tr >
                 <th scope="col">ID</th>
                 <th scope="col">Fullname</th>
                 <th scope="col">Username</th>
@@ -142,7 +150,7 @@
                 <th scope="col">Status</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody style="width: auto;">
             <tr>
                 <th scope="row">1</th>
                 <td>Tiêu Công Hạnh</td>
@@ -200,8 +208,7 @@
                 <td>Thiếu người eo</td>
             </tr>
         </tbody>
-    </table>
-
+      </table>
 
     <!-- thông tin thông số của trang -->
     <div class="row" style="display: flex;">
@@ -210,7 +217,7 @@
                 trong tổng số 7 mục</div>
         </div>
         <div class="col-12 col-sm-12 col-md-6 dataTables_pager" style="display: flex;">
-            <div class="dataTables_length col-8 col-sm-9 col-md-9" id="DataTables_Table_0_length">
+            <div class="dataTables_length col-8 col-sm-9 col-md-6" id="DataTables_Table_0_length">
                 <label style="display: flex;">Xem <select style="width: 40px;" name="DataTables_Table_0_length"
                         aria-controls="DataTables_Table_0"
                         class="custom-select custom-select-sm form-control form-control-sm">
@@ -220,7 +227,8 @@
                         <option value="100">100</option>
                     </select> mục</label>
             </div>
-            <div class="dataTables_paginate paging_simple_numbers col-2 col-sm-2 col-md-2" id="DataTables_Table_0_paginate">
+            <div class="dataTables_paginate paging_simple_numbers" style="margin-left: auto;"
+                id="DataTables_Table_0_paginate">
                 <ul class="pagination">
                     <li class="paginate_button page-item previous disabled" id="DataTables_Table_0_previous"><a href="#"
                             aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" class="page-link">Trước</a>
@@ -314,9 +322,9 @@
 
     <footer class="text-center text-lg-start bg-white text-muted ">
         <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+        <div class="text-center p-4" style="background-color: rgb(238, 127, 182);color: black;">
             © 2023 Tác giả :
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">HDCongHanh.com</a>
+            <a class="text-reset fw-bold" style="text-decoration: none;" href="https://mdbootstrap.com/">HDCongHanh.com</a>
         </div>
         <!-- Copyright -->
     </footer>
