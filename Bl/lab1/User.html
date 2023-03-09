@@ -11,12 +11,14 @@
         .btn {
             margin: auto;
             display: block;
+            width: 200px;
         }
 
         .modal-title {
             margin: auto;
             display: block;
         }
+
 
         .input-group-text {
             width: 100px;
@@ -31,65 +33,210 @@
             display: block;
         }
 
-        .fullhang{
+        .fullhang {
             display: flex;
         }
-        .checkbox{
+
+        .checkbox {
             display: flex;
             margin-left: 50px;
         }
-       .a1{
-        margin-left: 20px;
-       }
+
+        .a1 {
+            margin-left: 20px;
+        }
+
+        .form-inline {
+            display: flex;
+        }
+
+        .nav-link {
+            color: black;
+        }
+
+        .nav-link:hover {
+            color: deepskyblue;
+            background-color: bisque;
+        }
+
+        .h3 {
+            text-align: center;
+            font-size: 80px;
+        }
+
+        .h5 {
+            text-align: center;
+            font-size: 30px;
+            margin-top: 50px;
+            margin-bottom: 10px;
+        }
+
+        .text-center {
+            margin-top: 100px;
+        }
     </style>
 </head>
 
-<body>
-    <div class="container">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Fullname</th>
-                    <th scope="col">Username</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Group</th>
-                    <th scope="col">Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Tiêu Công Hạnh</td>
-                    <td>Hạnh</td>
-                    <td>tieuconghanh34@gmail.com</td>
-                    <td>MOBILE</td>
-                    <td>Thiếu tiền</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Nguyễn Đức Hùng</td>
-                    <td>Hùng</td>
-                    <td>nguyenduchung34@gmail.com</td>
-                    <td>Graphics</td>
-                    <td>Thiếu nhà</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Bùi Văn Ánh</td>
-                    <td>Ánh</td>
-                    <td>buivananh34@gmail.com</td>
-                    <td>WEB</td>
-                    <td>Thiếu người eo</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<body class="container">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Dashboard </a>
+        </li>
 
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Add User
-    </button>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Users
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">User</a></li>
+                <li><a class="dropdown-item" href="#">Group</a></li>
+                <li><a class="dropdown-item" href="#">Role</a></li>
+            </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Product</a></li>
+                <li><a class="dropdown-item" href="#">Category</a></li>
+                <li><a class="dropdown-item" href="#">Tag</a></li>
+            </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Settings
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Banner</a></li>
+                <li><a class="dropdown-item" href="#">Info</a></li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <h3 class="h3">user</h3>
+
+    <nav class="navbar navbar-light bg-light  ">
+        <form class=" form-inline ">
+           <input class="form-control col-4 col-sm-4 col-md-4" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success col-3 col-sm-2 col-md-2" type="submit">Search</button>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Add User
+        </button>
+        </form>
+        
+    </nav>
+    <h5 class="h5">Thông tin người dùng</h5>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Fullname</th>
+                <th scope="col">Username</th>
+                <th scope="col">Email</th>
+                <th scope="col">Group</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Tiêu Công Hạnh</td>
+                <td>Hạnh</td>
+                <td>tieuconghanh34@gmail.com</td>
+                <td>MOBILE</td>
+                <td>Thiếu tiền</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Nguyễn Đức Hùng</td>
+                <td>Hùng</td>
+                <td>nguyenduchung34@gmail.com</td>
+                <td>Graphics</td>
+                <td>Thiếu nhà</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Bùi Văn Ánh</td>
+                <td>Ánh</td>
+                <td>buivananh34@gmail.com</td>
+                <td>WEB</td>
+                <td>Thiếu người eo</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Bùi Văn Ánh</td>
+                <td>Ánh</td>
+                <td>buivananh34@gmail.com</td>
+                <td>WEB</td>
+                <td>Thiếu người eo</td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>Bùi Văn Ánh</td>
+                <td>Ánh</td>
+                <td>buivananh34@gmail.com</td>
+                <td>WEB</td>
+                <td>Thiếu người eo</td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>Bùi Văn Ánh</td>
+                <td>Ánh</td>
+                <td>buivananh34@gmail.com</td>
+                <td>WEB</td>
+                <td>Thiếu người eo</td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td>Bùi Văn Ánh</td>
+                <td>Ánh</td>
+                <td>buivananh34@gmail.com</td>
+                <td>WEB</td>
+                <td>Thiếu người eo</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!-- thông tin thông số của trang -->
+    <div class="row" style="display: flex;">
+        <div class="col-12 col-sm-12 col-md-6">
+            <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Đang xem 1 đến 10
+                trong tổng số 7 mục</div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 dataTables_pager" style="display: flex;">
+            <div class="dataTables_length col-8 col-sm-9 col-md-9" id="DataTables_Table_0_length">
+                <label style="display: flex;">Xem <select style="width: 40px;" name="DataTables_Table_0_length"
+                        aria-controls="DataTables_Table_0"
+                        class="custom-select custom-select-sm form-control form-control-sm">
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select> mục</label>
+            </div>
+            <div class="dataTables_paginate paging_simple_numbers col-2 col-sm-2 col-md-2" id="DataTables_Table_0_paginate">
+                <ul class="pagination">
+                    <li class="paginate_button page-item previous disabled" id="DataTables_Table_0_previous"><a href="#"
+                            aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" class="page-link">Trước</a>
+                    </li>
+                    <li class="paginate_button page-item active"><a href="#" aria-controls="DataTables_Table_0"
+                            data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
+                    <li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_0"
+                            data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
+                    <li class="paginate_button page-item next" id="DataTables_Table_0_next"><a href="#"
+                            aria-controls="DataTables_Table_0" data-dt-idx="3" tabindex="0" class="page-link">Sau</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- hết  thông tin thông số của trang -->
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -156,7 +303,6 @@
                     </div>
                 </div>
                 <!-- hết thân modal -->
-
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Save SinhVien</button>
@@ -164,7 +310,21 @@
             </div>
         </div>
     </div>
+    <!-- hết modal -->
 
+    <footer class="text-center text-lg-start bg-white text-muted ">
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+            © 2023 Tác giả :
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">HDCongHanh.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
 
     <script src="/bootstrap-5.2.3-dist/js/bootstrap.min.js">
         var myModal = document.getElementById('myModal')
