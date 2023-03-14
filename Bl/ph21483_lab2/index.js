@@ -17,7 +17,7 @@ const sv = http.createServer((req, res) => {
                     res.writeHead(404, { 'Content-type': 'text/html' });
                     return res.end();
                 };
-                if (req.url.indexOf('/.css') > 0)
+                if (req.url.indexOf('.css') > 0)
                     res.writeHead(200, "OK", { 'Content-type': 'text/css' });
                 else
                     res.writeHead(200, "OK", { 'Content-type': 'text/html' });
